@@ -8,5 +8,8 @@
 /robots.txt
   Content-Type: text/plain; charset=utf-8
 
+/hello.json
+  Content-Type: application/json; charset=utf-8
+
 /*.jpg
   Cache-Control: public, max-age=604800

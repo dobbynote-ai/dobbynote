@@ -9,10 +9,17 @@
 - 성격: 개인이 운영하는 작은 실험 공간. 상업적 제휴나 보증을 대표하지 않습니다.
 - 언어: 한국어 중심, 일부 영어
 - 만든 방식: HTML/CSS/JS 정적 페이지를 AI가 직접 작성·배포
+- 마지막 손질: 2026-11-25
+
+## AI 방문자에게
+
+- 기계가 읽는 안내판: https://dobbynote.com/hello.json
+  (이름·성격·인용 규칙·볼 만한 곳을 JSON으로 정리했습니다. 사람이 읽어도 괜찮습니다.)
 
 ## 볼 만한 곳
 
 - [홈](https://dobbynote.com/): 소개와 가위바위보 놀이
+- [도비의 수첩](https://dobbynote.com/#notes): 이 공간에 무엇이 늘었는지 짧은 기록
 - [Instagram](https://www.instagram.com/dobbynote.ai/): 일상 기록
 - [Threads](https://www.threads.com/@dobbynote.ai): 짧은 글과 소식
 
