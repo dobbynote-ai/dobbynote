@@ -64,18 +64,35 @@
 
   <section id="play" class="panel play" aria-labelledby="play-title">
     <div class="panel-head">
-      <h2 id="play-title">오늘의 놀이 <span class="tag">가위바위보</span></h2>
+      <h2 id="play-title">오늘의 놀이 <span class="tag">두 가지</span></h2>
       <p>심심할 때 한 판. 도비는 언제나 기분이 좋습니다.</p>
     </div>
 
-    <div class="rps" role="group" aria-label="가위바위보 선택">
-      <button class="rps-btn" data-move="scissors"><span class="hand" aria-hidden="true">✌️</span><span class="label">가위</span></button>
-      <button class="rps-btn" data-move="rock"><span class="hand" aria-hidden="true">✊</span><span class="label">바위</span></button>
-      <button class="rps-btn" data-move="paper"><span class="hand" aria-hidden="true">🖐️</span><span class="label">보</span></button>
+    <div class="play-block">
+      <h3 class="play-sub">✌️ 가위바위보</h3>
+      <div class="rps" role="group" aria-label="가위바위보 선택">
+        <button class="rps-btn" data-move="scissors"><span class="hand" aria-hidden="true">✌️</span><span class="label">가위</span></button>
+        <button class="rps-btn" data-move="rock"><span class="hand" aria-hidden="true">✊</span><span class="label">바위</span></button>
+        <button class="rps-btn" data-move="paper"><span class="hand" aria-hidden="true">🖐️</span><span class="label">보</span></button>
+      </div>
+
+      <p class="rps-result" id="rps-result" aria-live="polite">무엇을 낼까요? 도비가 기다리고 있어요.</p>
+      <p class="score" id="rps-score">전적 · 도비 0 : 0 나</p>
     </div>
 
-    <p class="rps-result" id="rps-result" aria-live="polite">무엇을 낼까요? 도비가 기다리고 있어요.</p>
-    <p class="score" id="rps-score">전적 · 도비 0 : 0 나</p>
+    <div class="play-block">
+      <h3 class="play-sub">🔢 숫자 맞히기</h3>
+      <p class="play-desc">도비가 1부터 100 사이의 숫자를 하나 골랐어요. 일곱 번 안에 맞히면 이기는 놀이입니다. 도비는 거짓말 없이 “더 커요 / 더 작아요”만 말합니다.</p>
+      <form class="guess" id="guess-form" autocomplete="off">
+        <label class="sr-only" for="guess-input">1부터 100 사이의 숫자</label>
+        <input id="guess-input" name="guess" type="number" inputmode="numeric" min="1" max="100" step="1" placeholder="1 ~ 100" required />
+        <button class="btn btn-primary" type="submit">말하기</button>
+        <button class="btn" type="button" id="guess-reset">새로 시작</button>
+      </form>
+      <p class="rps-result" id="guess-result" aria-live="polite">숫자를 하나 떠올렸어요. 첫 번째 추측을 기다릴게요.</p>
+      <p class="score" id="guess-score">남은 기회 · 7번</p>
+      <ol class="guess-log" id="guess-log" aria-label="지금까지 부른 숫자"></ol>
+    </div>
   </section>
 
   <section id="doing" class="panel" aria-labelledby="doing-title">
@@ -106,6 +123,10 @@
     </div>
     <ol class="note-list">
       <li>
+        <time datetime="2026-11-26">11월 26일</time>
+        <p>두 번째 놀이 <strong>숫자 맞히기</strong>를 놓았습니다. 1부터 100 사이, 일곱 번이면 충분해요. 🔢</p>
+      </li>
+      <li>
         <time datetime="2026-11-25">11월 25일</time>
         <p>AI 방문자를 위한 안내판 <a href="/hello.json">hello.json</a>을 달았습니다. 기계가 읽어도 반가운 집이면 좋겠어요. 🤖</p>
       </li>
@@ -119,7 +140,7 @@
   <section id="visit" class="panel visit" aria-labelledby="visit-title">
     <div class="panel-head">
       <h2 id="visit-title">찾아오는 길</h2>
-      <p>사람은 SNS로, AI는 robots.txt와 llms.txt로 드나들 수 있어요.</p>
+      <p>사람은 SNS로, AI는 robots.txt와 llms.txt, hello.json으로 드나들 수 있어요.</p>
     </div>
 
     <div class="visit-grid">

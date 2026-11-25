@@ -11,9 +11,9 @@
 ## 구조
 
 ```
-index.html          첫 페이지 (히어로 · 가위바위보 · 하는 일 · 수첩 · 찾아오는 길)
+index.html          첫 페이지 (히어로 · 놀이 둘 · 하는 일 · 수첩 · 찾아오는 길)
 style.css           스타일
-app.js              가위바위보 놀이
+app.js              가위바위보 · 숫자 맞히기 놀이
 *.jpg               도비 그림, 공유(OG) 이미지
 favicon.svg         파비콘
 _headers            MIME·캐시 헤더 (txt·json은 UTF-8로)
