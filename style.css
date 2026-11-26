@@ -157,6 +157,41 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 4px 10px; border-radius: 999px; vertical-align: middle;
 }
 
+/* ---------- 오늘의 한 줄 ---------- */
+
+.panel.today {
+  background: linear-gradient(140deg, #fffdfb, var(--cream-2));
+  position: relative;
+  overflow: hidden;
+}
+.panel.today::before {
+  content: "";
+  position: absolute; left: 0; top: 26px; bottom: 26px;
+  width: 5px; border-radius: 999px;
+  background: linear-gradient(180deg, var(--pink), #f0c1a0);
+}
+
+.today .panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.today .panel-head h2 { margin: 0; }
+
+.today-date {
+  margin: 0;
+  font-size: .82rem; font-weight: 700; letter-spacing: .06em;
+  color: var(--pink-deep);
+  background: var(--paper); border: 1px solid var(--line);
+  padding: 5px 12px; border-radius: 999px;
+}
+
+.today-line {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.1vw, 1.38rem);
+  font-weight: 700; letter-spacing: -.015em; line-height: 1.6;
+  color: var(--ink);
+  max-width: 40em;
+}
+
+.today-note { margin-top: 14px; }
+
 /* ---------- 놀이 공통 ---------- */
 
 .play-block + .play-block {
@@ -322,4 +357,6 @@ img { max-width: 100%; height: auto; display: block; }
   .guess input { background: #2e2826; }
   .guess-log li { background: #3a2a2f; }
   .note-list li, .cards li, .visit-grid article { background: #2e2826; }
+  .panel.today { background: linear-gradient(140deg, #262120, #2a2321); }
+  .today-date { background: #2e2826; }
 }
